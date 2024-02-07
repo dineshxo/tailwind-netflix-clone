@@ -4,14 +4,53 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="style.css" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <style type="text/tailwindcss">
+      .title {
+        @apply text-[3.125rem] leading-1.1 font-semibold tracking-wide;
+      }
+      .subtitle {
+        @apply text-[1.625rem] font-light;
+      }
+    </style>
   </head>
-  <body>
-    <div class="flex justify-center gap-4 m-4 bg-slate-500 h-[30vh]">
-      <div class="p-5 bg-amber-400">Box 1</div>
-      <div class="flex-grow p-5 bg-orange-500">Box 2</div>
-      <div class="p-5 bg-amber-700">Box 3</div>
+  <body class="bg-black">
+    <!--hero section----------------------------------------->
+    <div
+      class="bg-[url('Assets/main.jpg')] h-[100vh] bg-cover bg-center relative"
+    >
+      <div
+        class="absolute top-0 bottom-0 left-0 right-0 bg-gradient-to-b from-black/90 via-black/20 to-black/90"
+      ></div>
+
+      <div
+        class="relative z-10 flex items-center justify-between px-[160px] py-[28px]"
+      >
+        <img src="Assets/logo.png" alt="" class="h-16" />
+        <button class="bg-red-700 rounded-lg px-[17px] py-[7px] text-white">
+          Sign Up
+        </button>
+      </div>
+      <!--hero text----------------------------------------->
+      <div
+        class="relative z-10 flex flex-col items-center w-[85%] max-w-[1000px] mx-auto text-center gap-3 px-5 top-[25%]"
+      >
+        <h1 class="text-white text-[50px] font-bold">
+          Unlimited Movies, TV shows,and more.
+        </h1>
+        <p class="text-white text-[30px] font-semibold">
+          Watch Anywhere, Cancel Anytime.
+        </p>
+        <p class="text-white text-[20px]">
+          Ready to watch? Enter Your email to create or restart your membership!
+        </p>
+        <div>
+          <input type="text" />
+          <button class="text-white">
+            <span>Get Started.</span>
+          </button>
+        </div>
+      </div>
     </div>
   </body>
 </html>
