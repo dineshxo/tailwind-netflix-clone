@@ -5,12 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <script src="https://cdn.tailwindcss.com"></script>
+
     <style type="text/tailwindcss">
       .title {
-        @apply text-[3.125rem] leading-1.1 font-semibold tracking-wide;
+        @apply text-[3.125rem] leading-[1.1] font-extrabold tracking-wide;
       }
+
       .subtitle {
-        @apply text-[1.625rem] font-light;
+        @apply text-[1.25rem] font-light;
+      }
+
+      .red-btn {
+        @apply bg-red-600 py-[11px] px-[26px] rounded-md;
       }
     </style>
   </head>
@@ -33,22 +39,104 @@
       </div>
       <!--hero text----------------------------------------->
       <div
-        class="relative z-10 flex flex-col items-center w-[85%] max-w-[1000px] mx-auto text-center gap-3 px-5 top-[25%]"
+        class="relative z-10 flex flex-col items-center max-w-[1200px] mx-auto gap-3 px-5 top-[25%] w-[full]"
       >
-        <h1 class="text-white text-[50px] font-bold">
-          Unlimited Movies, TV shows,and more.
+        <h1 class="mb-5 text-white title">
+          Unlimited movies, TV shows, and more.
         </h1>
-        <p class="text-white text-[30px] font-semibold">
+        <p class="text-white text-[20px] font-semibold">
           Watch Anywhere, Cancel Anytime.
         </p>
-        <p class="text-white text-[20px]">
+        <p class="text-white subtitle">
           Ready to watch? Enter Your email to create or restart your membership!
         </p>
-        <div>
-          <input type="text" />
-          <button class="text-white">
-            <span>Get Started.</span>
+        <div class="flex items-center justify-center w-[60%]">
+          <input
+            type="text"
+            placeholder="Email Address"
+            class="m-2 placeholder:text-sm w-[60%] rounded-lg py-[10px] px-[26px] bg-black/50 border border-solid border-white"
+          />
+          <button class="text-white red-btn">
+            <span class="text-bold">Get Started.</span>
           </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Enjoy on your tv -->
+
+    <div class="w-[80%] mx-auto my-auto mb-[100px]">
+      <div class="flex items-center justify-center">
+        <div class="w-[50%]">
+          <h1 class="pb-5 text-white title">Enjoy on your TV</h1>
+          <p class="text-white subtitle">
+            Watch on Smart TVs, Playstation, Xbox, Chromecast, Apple TV, Blu-ray
+            players, and more.
+          </p>
+        </div>
+        <div class="relative w-[50%]">
+          <img
+            src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/tv.png"
+            alt=""
+            class="z-10 w-full h-full"
+          />
+          <video
+            class="absolute top-[48%] max-h-[54%] max-w-[73%] left-[50%] -translate-x-1/2 -translate-y-1/2 -z-10"
+            data-uia="nmhp-card-animation-asset-video"
+            autoplay=""
+            playsinline=""
+            muted=""
+            loop=""
+          >
+            <source
+              src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/video-tv-0819.m4v"
+              type="video/mp4"
+            />
+          </video>
+        </div>
+      </div>
+    </div>
+
+    <!-- Download your shows to watch offline -->
+
+    <div class="w-[80%] mx-auto my-auto mb-[100px]">
+      <div class="flex items-center justify-center">
+        <div class="relative w-[50%]">
+          <img
+            src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/mobile-0819.jpg"
+            alt=""
+            class="z-10 w-full h-full"
+          />
+
+          <div
+            class="flex gap-5 p-5 bg-black mx-auto rounded-[30px] justify-center w-[55%] border border-solid border-white -translate-y-40 items-center"
+          >
+            <img
+              src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/boxshot.png"
+              alt=""
+              class="h-[65px]"
+            />
+
+            <div class="flex flex-col items-center justify-center flex-grow">
+              <div class="text-white">Stranger Things</div>
+              <div class="text-blue-500">Downloading...</div>
+            </div>
+
+            <img
+              src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/download-icon.gif"
+              alt=""
+              class="h-[70px]"
+            />
+          </div>
+        </div>
+
+        <div class="w-[50%]">
+          <h1 class="pb-5 text-white title">
+            Download your shows to watch offline
+          </h1>
+          <p class="text-white subtitle">
+            Save your favorites easily and always have something to watch.
+          </p>
         </div>
       </div>
     </div>
